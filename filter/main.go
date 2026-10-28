@@ -3,8 +3,6 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println("Hello")
-
 	slices1 := []int{12, 7, 4, 9, 16, 3, 10}
 	fmt.Println(filterPair(slices1))
 }
