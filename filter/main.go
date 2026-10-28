@@ -1,0 +1,22 @@
+package main
+
+import "fmt"
+
+func main() {
+	fmt.Println("Hello")
+
+	slices1 := []int{12, 7, 4, 9, 16, 3, 10}
+	fmt.Println(filterPair(slices1))
+}
+
+func filterPair(pair1 []int) []int {
+
+	var sum []int
+	for _, v := range pair1 {
+		if v%2 == 0 {
+			sum = append(sum, v)
+		}
+	}
+
+	return sum
+}
