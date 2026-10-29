@@ -9,12 +9,12 @@ func main() {
 
 func filterPair(pair1 []int) []int {
 
-	var sum []int
+	var result []int
 	for _, v := range pair1 {
 		if v%2 == 0 {
-			sum = append(sum, v)
+			result = append(result, v)
 		}
 	}
 
-	return sum
+	return result
 }
