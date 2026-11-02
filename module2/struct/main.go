@@ -9,14 +9,20 @@ type Vehicle struct {
 }
 
 func main()  {
-	
-
 	vehicle := Vehicle{
 		Brand: "BMW",
 		Model: "M4",
-		Speed: 240
+		Speed: 240,
 	}
 
-	fmt.Println(vehicle.Brand)
+	vehicle.Speed = 180
+
+	fmt.Printf("votre véhicules : %s %v", vehicle.Brand, vehicle.Speed)
+	fmt.Println(accelerate(vehicle, 40))
 }
 
+func accelerate(vehicle Vehicle, amount int) Vehicle {
+	vehicle.Speed += amount
+
+	return vehicle
+}
